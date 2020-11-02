@@ -1,8 +1,7 @@
 import {useRouter} from "next/router"
-import styles from '../../styles/Home.module.css'
 import {gql,useQuery} from '@apollo/client';
 import {useState, useContext} from 'react'
-import AppContext from "../../public/context"
+import AppContext from "./context"
 import {
   Button,
   Card,

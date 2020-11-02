@@ -13,7 +13,7 @@ import {
   Input,
 } from "reactstrap";
 import { registerUser } from "../components/auth";
-import AppContext from "../public/context";
+import AppContext from "../components/context";
 
 const Register = () => {
   const [data, setData] = useState({ email: "", username: "", password: "" });

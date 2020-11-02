@@ -5,8 +5,8 @@ import { Row, Col } from "reactstrap";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "../components/checkoutForm";
-import AppContext from "../public/context";
-import Cart from "./restaurants/cart";
+import AppContext from "../components/context";
+import Cart from "../components/cart";
 
 function Checkout() {
   // get app context

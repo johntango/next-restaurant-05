@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import Head from "next/head";
-import Cart from "./restaurants/cart"
-import AppContext from "../public/context";
+import Cart from "../components/cart"
 import {ApolloProvider,ApolloClient,HttpLink, InMemoryCache} from '@apollo/client';
-import RestaurantList from './restaurants/restaurantList';
+import RestaurantList from '../components/restaurantList';
 import { InputGroup, InputGroupAddon,Input} from "reactstrap";
-import Link from "next/link"
+
 
 function Home() {
     const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";

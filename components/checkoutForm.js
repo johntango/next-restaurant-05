@@ -4,7 +4,7 @@ import { FormGroup, Label, Input } from "reactstrap";
 import fetch from "isomorphic-fetch";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import CardSection from "./cardSection";
-import AppContext from "../public/context";
+import AppContext from "./context";
 import Cookies from "js-cookie";
 
 function CheckoutForm() {

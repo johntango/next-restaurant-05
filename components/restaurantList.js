@@ -1,9 +1,9 @@
 import {gql,useQuery} from '@apollo/client';
-import Link from "next/link"
 import Dishes from "./dishes"
 import {useContext, useState} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import AppContext from "../../public/context"
+
+
+import AppContext from "./context"
 import {
   Button,
   Card,
@@ -42,7 +42,7 @@ let searchQuery = data.restaurants.filter((res) =>{
     return res.name.toLowerCase().includes(props.search)
   })
 
-
+let restId = searchQuery[0].id
  
 // definet renderer for Dishes
   const renderDishes = (restaurantID) => {

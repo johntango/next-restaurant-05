@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import { useRouter } from "next/router";
 import { Button, Card, CardBody, CardTitle, Badge } from "reactstrap";
-import AppContext from "../../public/context"
+import AppContext from "./context"
 import Link from "next/link"
-import Checkout from "../checkout"
 // we can pass cart data in via props method 
 // the alternative is using useContext as below
 function Cart() {

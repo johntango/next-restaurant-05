@@ -13,7 +13,7 @@ import {
   Input,
 } from "reactstrap";
 import { login } from "../components/auth";
-import AppContext from "../public/context";
+import AppContext from "../components/context";
 
 function Login(props) {
   const [data, updateData] = useState({ identifier: "", password: "" });

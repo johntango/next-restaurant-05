@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { Container, Nav, NavItem } from "reactstrap";
-import AppContext from "../public/context";
+import AppContext from "./context";
 
 const Layout = (props) => {
 const title = "Welcome to Nextjs";
